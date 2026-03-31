@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+dist/
+web/dist/
+ownership-map-out/
+data/automation-store.json

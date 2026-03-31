@@ -1,0 +1,32 @@
+[
+  {
+    "id": "doc-architecture-overview",
+    "title": "Architecture Overview",
+    "url": "https://example.com/docs/architecture-overview",
+    "text": "This sample knowledge base describes a connector-style ChatGPT app. The server exposes standard search and fetch tools, keeps responses read-only, and returns canonical URLs for citations.",
+    "metadata": {
+      "category": "architecture",
+      "updatedAt": "2026-03-14"
+    }
+  },
+  {
+    "id": "doc-runbook-local-dev",
+    "title": "Local Development Runbook",
+    "url": "https://example.com/docs/local-development-runbook",
+    "text": "Run npm install, then npm run build, then npm start. Expose the local MCP server with ngrok and connect the public HTTPS endpoint plus the /mcp path in ChatGPT developer mode.",
+    "metadata": {
+      "category": "operations",
+      "updatedAt": "2026-03-14"
+    }
+  },
+  {
+    "id": "doc-data-contract",
+    "title": "Data Contract",
+    "url": "https://example.com/docs/data-contract",
+    "text": "The search tool returns one text content item that JSON encodes an object with results. The fetch tool returns one text content item that JSON encodes the full document payload including id, title, text, url, and optional metadata.",
+    "metadata": {
+      "category": "api",
+      "updatedAt": "2026-03-14"
+    }
+  }
+]

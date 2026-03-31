@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "defaultMode": "th-en-split",
+  "requiredSections": [
+    "Purpose",
+    "When to use",
+    "How to use",
+    "Inputs/Outputs",
+    "Health Signals",
+    "Limitations",
+    "Examples",
+    "Related Links"
+  ],
+  "requiredLogicalIds": [
+    "system-hub",
+    "architecture-guide",
+    "health-model",
+    "01-strategy-home",
+    "02-implementation-plan",
+    "03-system-runbook",
+    "04-mission-control",
+    "05-incident-playbook",
+    "06-metrics-governance",
+    "07-archive-migration"
+  ],
+  "modes": {
+    "en-only": {
+      "description": "English-only workspace pages",
+      "expectPerLogicalId": 1,
+      "pages": [
+        {
+          "id": "system-hub-en",
+          "logicalId": "system-hub",
+          "language": "en",
+          "title": "Personal Knowledge Base AI Operating System — EN",
+          "templatePath": "variants/en-only/system-hub.md"
+        },
+        {
+          "id": "architecture-guide-en",
+          "logicalId": "architecture-guide",
+          "language": "en",
+          "title": "Architecture and Integration Guide — EN",
+          "templatePath": "variants/en-only/architecture.md"
+        },
+        {
+          "id": "health-model-en",
+          "logicalId": "health-model",
+          "language": "en",
+          "title": "Operational Health and Error Model — EN",
+          "templatePath": "variants/en-only/health-model.md"
+        },
+        {
+          "id": "01-strategy-home-en",
+          "logicalId": "01-strategy-home",
+          "language": "en",
+          "title": "01 Strategy Home — EN",
+          "templatePath": "variants/en-only/root-page.md"
+        },
+        {
+          "id": "02-implementation-plan-en",
+          "logicalId": "02-implementation-plan",
+          "language": "en",
+          "title": "02 Implementation Plan — EN",
+          "templatePath": "variants/en-only/root-page.md"
+        },
+        {
+          "id": "03-system-runbook-en",
+          "logicalId": "03-system-runbook",
+          "language": "en",
+          "title": "03 System Runbook — EN",
+          "templatePath": "variants/en-only/root-page.md"
+        },
+        {
+          "id": "04-mission-control-en",
+          "logicalId": "04-mission-control",
+          "language": "en",
+          "title": "04 Mission Control — EN",
+          "templatePath": "variants/en-only/root-page.md"
+        },
+        {
+          "id": "05-incident-playbook-en",
+          "logicalId": "05-incident-playbook",
+          "language": "en",
+          "title": "05 Incident Playbook — EN",
+          "templatePath": "variants/en-only/root-page.md"
+        },
+        {
+          "id": "06-metrics-governance-en",
+          "logicalId": "06-metrics-governance",
+          "language": "en",
+          "title": "06 Metrics and Governance — EN",
+          "templatePath": "variants/en-only/root-page.md"
+        },
+        {
+          "id": "07-archive-migration-en",
+          "logicalId": "07-archive-migration",
+          "language": "en",
+          "title": "07 Archive and Migration — EN",
+          "templatePath": "variants/en-only/root-page.md"
+        }
+      ]
+    },
+    "th-en-split": {
+      "description": "Separate Thai and English pages for each logical page",
+      "expectPerLogicalId": 2,
+      "requiredLanguages": [
+        "th",
+        "en"
+      ],
+      "pages": [
+        {
+          "id": "system-hub-th",
+          "logicalId": "system-hub",
+          "language": "th",
+          "title": "Personal Knowledge Base AI Operating System — TH",
+          "templatePath": "variants/th-en-split/system-hub-th.md"
+        },
+        {
+          "id": "system-hub-en",
+          "logicalId": "system-hub",
+          "language": "en",
+          "title": "Personal Knowledge Base AI Operating System — EN",
+          "templatePath": "variants/th-en-split/system-hub-en.md"
+        },
+        {
+          "id": "architecture-guide-th",
+          "logicalId": "architecture-guide",
+          "language": "th",
+          "title": "Architecture and Integration Guide — TH",
+          "templatePath": "variants/th-en-split/architecture-th.md"
+        },
+        {
+          "id": "architecture-guide-en",
+          "logicalId": "architecture-guide",
+          "language": "en",
+          "title": "Architecture and Integration Guide — EN",
+          "templatePath": "variants/th-en-split/architecture-en.md"
+        },
+        {
+          "id": "health-model-th",
+          "logicalId": "health-model",
+          "language": "th",
+          "title": "Operational Health and Error Model — TH",
+          "templatePath": "variants/th-en-split/health-model-th.md"
+        },
+        {
+          "id": "health-model-en",
+          "logicalId": "health-model",
+          "language": "en",
+          "title": "Operational Health and Error Model — EN",
+          "templatePath": "variants/th-en-split/health-model-en.md"
+        },
+        {
+          "id": "01-strategy-home-th",
+          "logicalId": "01-strategy-home",
+          "language": "th",
+          "title": "01 Strategy Home — TH",
+          "templatePath": "variants/th-en-split/root-page-th.md"
+        },
+        {
+          "id": "01-strategy-home-en",
+          "logicalId": "01-strategy-home",
+          "language": "en",
+          "title": "01 Strategy Home — EN",
+          "templatePath": "variants/th-en-split/root-page-en.md"
+        },
+        {
+          "id": "02-implementation-plan-th",
+          "logicalId": "02-implementation-plan",
+          "language": "th",
+          "title": "02 Implementation Plan — TH",
+          "templatePath": "variants/th-en-split/root-page-th.md"
+        },
+        {
+          "id": "02-implementation-plan-en",
+          "logicalId": "02-implementation-plan",
+          "language": "en",
+          "title": "02 Implementation Plan — EN",
+          "templatePath": "variants/th-en-split/root-page-en.md"
+        },
+        {
+          "id": "03-system-runbook-th",
+          "logicalId": "03-system-runbook",
+          "language": "th",
+          "title": "03 System Runbook — TH",
+          "templatePath": "variants/th-en-split/root-page-th.md"
+        },
+        {
+          "id": "03-system-runbook-en",
+          "logicalId": "03-system-runbook",
+          "language": "en",
+          "title": "03 System Runbook — EN",
+          "templatePath": "variants/th-en-split/root-page-en.md"
+        },
+        {
+          "id": "04-mission-control-th",
+          "logicalId": "04-mission-control",
+          "language": "th",
+          "title": "04 Mission Control — TH",
+          "templatePath": "variants/th-en-split/root-page-th.md"
+        },
+        {
+          "id": "04-mission-control-en",
+          "logicalId": "04-mission-control",
+          "language": "en",
+          "title": "04 Mission Control — EN",
+          "templatePath": "variants/th-en-split/root-page-en.md"
+        },
+        {
+          "id": "05-incident-playbook-th",
+          "logicalId": "05-incident-playbook",
+          "language": "th",
+          "title": "05 Incident Playbook — TH",
+          "templatePath": "variants/th-en-split/root-page-th.md"
+        },
+        {
+          "id": "05-incident-playbook-en",
+          "logicalId": "05-incident-playbook",
+          "language": "en",
+          "title": "05 Incident Playbook — EN",
+          "templatePath": "variants/th-en-split/root-page-en.md"
+        },
+        {
+          "id": "06-metrics-governance-th",
+          "logicalId": "06-metrics-governance",
+          "language": "th",
+          "title": "06 Metrics and Governance — TH",
+          "templatePath": "variants/th-en-split/root-page-th.md"
+        },
+        {
+          "id": "06-metrics-governance-en",
+          "logicalId": "06-metrics-governance",
+          "language": "en",
+          "title": "06 Metrics and Governance — EN",
+          "templatePath": "variants/th-en-split/root-page-en.md"
+        },
+        {
+          "id": "07-archive-migration-th",
+          "logicalId": "07-archive-migration",
+          "language": "th",
+          "title": "07 Archive and Migration — TH",
+          "templatePath": "variants/th-en-split/root-page-th.md"
+        },
+        {
+          "id": "07-archive-migration-en",
+          "logicalId": "07-archive-migration",
+          "language": "en",
+          "title": "07 Archive and Migration — EN",
+          "templatePath": "variants/th-en-split/root-page-en.md"
+        }
+      ]
+    },
+    "bilingual": {
+      "description": "Single page contains Thai first, then English",
+      "expectPerLogicalId": 1,
+      "pages": [
+        {
+          "id": "system-hub",
+          "logicalId": "system-hub",
+          "language": "bilingual",
+          "title": "Personal Knowledge Base AI Operating System",
+          "templatePath": "variants/bilingual/system-hub.md"
+        },
+        {
+          "id": "architecture-guide",
+          "logicalId": "architecture-guide",
+          "language": "bilingual",
+          "title": "Architecture and Integration Guide",
+          "templatePath": "variants/bilingual/architecture.md"
+        },
+        {
+          "id": "health-model",
+          "logicalId": "health-model",
+          "language": "bilingual",
+          "title": "Operational Health and Error Model",
+          "templatePath": "variants/bilingual/health-model.md"
+        },
+        {
+          "id": "01-strategy-home",
+          "logicalId": "01-strategy-home",
+          "language": "bilingual",
+          "title": "01 Strategy Home",
+          "templatePath": "variants/bilingual/root-page.md"
+        },
+        {
+          "id": "02-implementation-plan",
+          "logicalId": "02-implementation-plan",
+          "language": "bilingual",
+          "title": "02 Implementation Plan",
+          "templatePath": "variants/bilingual/root-page.md"
+        },
+        {
+          "id": "03-system-runbook",
+          "logicalId": "03-system-runbook",
+          "language": "bilingual",
+          "title": "03 System Runbook",
+          "templatePath": "variants/bilingual/root-page.md"
+        },
+        {
+          "id": "04-mission-control",
+          "logicalId": "04-mission-control",
+          "language": "bilingual",
+          "title": "04 Mission Control",
+          "templatePath": "variants/bilingual/root-page.md"
+        },
+        {
+          "id": "05-incident-playbook",
+          "logicalId": "05-incident-playbook",
+          "language": "bilingual",
+          "title": "05 Incident Playbook",
+          "templatePath": "variants/bilingual/root-page.md"
+        },
+        {
+          "id": "06-metrics-governance",
+          "logicalId": "06-metrics-governance",
+          "language": "bilingual",
+          "title": "06 Metrics and Governance",
+          "templatePath": "variants/bilingual/root-page.md"
+        },
+        {
+          "id": "07-archive-migration",
+          "logicalId": "07-archive-migration",
+          "language": "bilingual",
+          "title": "07 Archive and Migration",
+          "templatePath": "variants/bilingual/root-page.md"
+        }
+      ]
+    }
+  }
+}

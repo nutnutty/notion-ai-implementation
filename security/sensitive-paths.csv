@@ -1,0 +1,23 @@
+# pattern,tag,weight
+**/auth/**,auth,1.0
+**/oauth/**,auth,1.0
+**/rbac/**,auth,1.0
+**/session/**,auth,1.0
+**/token/**,auth,1.0
+**/iam/**,auth,1.0
+**/sso/**,auth,1.0
+**/crypto/**,crypto,1.0
+**/tls/**,crypto,1.0
+**/ssl/**,crypto,1.0
+**/secrets/**,secrets,1.0
+**/keys/**,secrets,1.0
+**/*.pem,secrets,1.0
+**/*.key,secrets,1.0
+**/*.p12,secrets,1.0
+**/*.pfx,secrets,1.0
+
+# Current repo-specific sensitive entrypoints
+server/src/index.ts,platform_boundary,1.0
+server/src/security.ts,platform_security,1.0
+web/src/component.tsx,ui_bridge,1.0
+data/documents.json,knowledge_corpus,1.0

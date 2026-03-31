@@ -1,0 +1,38 @@
+{
+  "name": "playground-chatgpt-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:web": "esbuild web/src/component.tsx --bundle --format=esm --outfile=web/dist/component.js",
+    "build": "npm run build:web && tsc -p tsconfig.json",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "test": "tsx --test server/src/**/*.test.ts",
+    "dev": "tsx watch server/src/index.ts",
+    "dev:tunnel": "bash scripts/dev-tunnel.sh",
+    "start": "node dist/index.js",
+    "notion:templates:list": "node scripts/notion-template-mode.mjs list",
+    "notion:templates:apply": "node scripts/notion-template-mode.mjs apply",
+    "notion:templates:validate": "node scripts/notion-template-mode.mjs validate",
+    "inspect": "npx @modelcontextprotocol/inspector@latest --server-url http://localhost:8787/mcp --transport http",
+    "ownership:map": "python3 \"${SECURITY_OWNERSHIP_SKILL_DIR:-$HOME/.codex/skills/security-ownership-map}/scripts/run_ownership_map.py\" --repo . --out ownership-map-out --since \"12 months ago\" --sensitive-config security/sensitive-paths.csv --emit-commits",
+    "ownership:query:hotspots": "python3 \"${SECURITY_OWNERSHIP_SKILL_DIR:-$HOME/.codex/skills/security-ownership-map}/scripts/query_ownership.py\" --data-dir ownership-map-out summary --section bus_factor_hotspots",
+    "ownership:query:orphaned": "python3 \"${SECURITY_OWNERSHIP_SKILL_DIR:-$HOME/.codex/skills/security-ownership-map}/scripts/query_ownership.py\" --data-dir ownership-map-out summary --section orphaned_sensitive_code",
+    "ownership:query:hidden-owners": "python3 \"${SECURITY_OWNERSHIP_SKILL_DIR:-$HOME/.codex/skills/security-ownership-map}/scripts/query_ownership.py\" --data-dir ownership-map-out summary --section hidden_owners"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "^1.0.1",
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "esbuild": "^0.25.10",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.3"
+  }
+}

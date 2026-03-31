@@ -1,0 +1,11 @@
+# Security ownership bootstrap.
+# Replace @nutnutty with your canonical GitHub username or team handle if different.
+
+# MCP server and transport boundary
+/server/src/** @nutnutty
+
+# Widget RPC bridge and client-side trust boundary
+/web/src/** @nutnutty
+
+# Knowledge corpus integrity
+/data/** @nutnutty

@@ -4,3 +4,6 @@ dist/
 web/dist/
 ownership-map-out/
 data/automation-store.json
+.env
+.env.*
+!.env.example

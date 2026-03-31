@@ -172,12 +172,28 @@ Manual runtime checks:
 3. Check automation state: `http://localhost:8787/automation/state`
 4. Run capture smoke test and verify `sync` object in response
 
+## ความเป็นส่วนตัวและสุขอนามัย Repo / Privacy and Repo Hygiene
+
+### TH
+- Repo นี้ถูก sanitize แล้ว และใช้ policy “no personal identifiers in Git”
+- สำหรับเครื่องที่เคย clone ก่อน history rewrite ให้ sync ใหม่ด้วย `reset --hard` หรือ clone ใหม่
+- ก่อน push ให้สแกนหา PII/IDs ด้วย `rg` ตามคู่มือ
+
+### EN
+- This repo has been sanitized and follows a no-personal-identifiers-in-Git policy.
+- Existing clones from before the history rewrite must hard-reset or re-clone.
+- Run the pre-push PII scan before every push.
+
+รายละเอียดดูที่:
+- [docs/repository-privacy-guidelines.md](docs/repository-privacy-guidelines.md)
+
 ## เอกสารที่เกี่ยวข้อง / Related Docs
 
 - [docs/notion-personal-kb-v2-setup.md](docs/notion-personal-kb-v2-setup.md)
 - [docs/notion-live-sync-setup.md](docs/notion-live-sync-setup.md)
 - [docs/personal-kb-v2-migration-batch-001.md](docs/personal-kb-v2-migration-batch-001.md)
 - [docs/notion-templates/README.md](docs/notion-templates/README.md)
+- [docs/repository-privacy-guidelines.md](docs/repository-privacy-guidelines.md)
 
 ## หมายเหตุการทำงาน / Operational Notes
 
@@ -190,4 +206,3 @@ Manual runtime checks:
 - Local store remains authoritative even when Notion sync fails.
 - Sync failures are surfaced via `sync` response object and do not roll back capture.
 - Legacy migration follows curated batches (no bulk import).
-
